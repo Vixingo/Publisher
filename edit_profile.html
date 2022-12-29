@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Edit Profile</title>
+        <link rel="stylesheet" href="css/edit_profile.css" />
+    </head>
+
+    <body>
+        <!-- Navigation -->
+
+        <section>
+            <div class="mainnav">
+                <div class="navigation">
+                    <!-- <div class="navhead">
+
+                    <div><img src="img/logo.png"></div>
+                    <div>
+                        <h2>Publishers</h2>
+                        <h3>Partner</h3>
+                    </div>
+
+                </div> -->
+
+                    <ul>
+                        <li class="logoli">
+                            <a href="#">
+                                <span>
+                                    <img
+                                        class="mainlogo"
+                                        src="img/ad_logo.png"
+                                    />
+                                </span>
+                                <span>
+                                    <h2>Publishers</h2>
+                                    <h3>Partner</h3>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="dashboard.html">
+                                <span
+                                    ><img class="navicon" src="img/home.png"
+                                /></span>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="reports.html">
+                                <span
+                                    ><img class="navicon" src="img/report.png"
+                                /></span>
+                                <span class="title">Report</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="payment.html">
+                                <span
+                                    ><img class="navicon" src="img/payment.png"
+                                /></span>
+                                <span class="title">Payment</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span
+                                    ><img class="navicon" src="img/logout.png"
+                                /></span>
+                                <span class="title">Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- <div class="navftr">
+                    <ul>
+                        <li>
+                            <span><img src="img/logout.png"></span>
+                            <span>Log Out</span>
+                        </li>
+                    </ul>
+                </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="main">
+            <div class="topbar sticky-top">
+                <div class="toggle" onclick="toggleMenu();">
+                    <img src="img/burger.png" />
+                </div>
+                <div class="mob_logo">
+                    <img src="img/logo.png" alt="" />
+                </div>
+                <div class="dropdown">
+                    <button
+                        class="btn user"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <div class="userdwn">
+                            <img src="img/prodwn.png" />
+                        </div>
+                        <div class="userpro">
+                            <img src="img/Profile.png" />
+                        </div>
+                    </button>
+                    <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="dropdownMenuButton1"
+                    >
+                        <li>
+                            <a class="dropdown-item" href="profile.html"
+                                >Profile</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="edit_profile.html"
+                                >Edit Profile</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">log out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mainbody">
+                <div class="firstsec">
+                    <div class="div">
+                        <h1>Profile</h1>
+                    </div>
+                    <div>
+                        <button>Edit</button>
+                    </div>
+                </div>
+
+                <div class="secondsec">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="names">
+                                <table>
+                                    <tr>
+                                        <td class="names1">Name</td>
+                                        <td style="font-weight: 600">
+                                            <input
+                                                type="text"
+                                                placeholder="Hassaan Abuzar"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="names1">Email</th>
+                                        <th>
+                                            <input
+                                                type="text"
+                                                placeholder="hassaan_abuzar@yahoo.com"
+                                            />
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="names1">Phone</th>
+                                        <th>
+                                            <input
+                                                type="text"
+                                                placeholder="03218541753"
+                                            />
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="addreses">
+                                <table>
+                                    <tr>
+                                        <td class="names1">Source</td>
+                                        <td>
+                                            <input
+                                                type="text"
+                                                placeholder="www.publisherspartner.com"
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="names1">Monthly Traffic</th>
+                                        <th>
+                                            <input
+                                                type="text"
+                                                placeholder="50k"
+                                            />
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="names1">Source</th>
+                                        <th>
+                                            <input
+                                                type="text"
+                                                placeholder="Google"
+                                            />
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function toggleMenu() {
+                toggle = document.querySelector(".toggle");
+                navigation = document.querySelector(".navigation");
+                main = document.querySelector(".main");
+                logoli = document.querySelector(".logoli");
+                toggle.classList.toggle("active");
+                navigation.classList.toggle("active");
+                main.classList.toggle("active");
+                logoli.classList.toggle("active");
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
